@@ -19,9 +19,11 @@ export default defineConfig(({ command, mode }) => {
       mainFields: ['browser', 'module', 'jsnext:main', 'jsnext'],
     },
     server: {
+      // Bind to all interfaces so the preview proxy can reach it
       host: '0.0.0.0',
-      allowedHosts: ['.kavia.ai'],
+      // Let Vite use resolvedPort from env (VITE_PORT or PORT) or default 3000
       port: resolvedPort,
+      // Do not auto-increment; fail if 3000 is occupied so healthcheck is accurate
       strictPort: true,
       headers: {
         'Cross-Origin-Opener-Policy': 'same-origin',

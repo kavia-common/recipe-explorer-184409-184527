@@ -7,10 +7,9 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
-    "dev": "vite dev --strictPort",
-    "dev:port": "vite dev --strictPort",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 3000 --strictPort",
+    "preview": "vite preview",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix"
   },
