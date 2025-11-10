@@ -7,14 +7,14 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
-    "dev": "vite dev",
+    "dev": "vite dev --strictPort",
     "build": "vite build",
     "preview": "vite preview --port 3000 --strictPort",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix"
   },
   "dependencies": {
-    "@lightningjs/blits": "^3.0.0"
+    "@lightningjs/blits": "^1.41.0"
   },
   "devDependencies": {
     "vite": "^5.4.8",
