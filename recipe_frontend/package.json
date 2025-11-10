@@ -8,6 +8,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "vite dev --strictPort",
+    "dev:port": "vite dev --strictPort",
     "build": "vite build",
     "preview": "vite preview --port 3000 --strictPort",
     "lint": "eslint '**/*.js'",

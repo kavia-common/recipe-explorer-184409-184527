@@ -36,4 +36,11 @@ Assets:
 Run:
 - npm install
 - npm run dev
-- npm run preview (port 3000)
+
+If you encounter "Port 3000 is already in use":
+- Create a .env file (see .env.example) and set VITE_PORT to a free port, e.g.:
+  VITE_PORT=3001
+- Then run: npm run dev
+
+Preview:
+- npm run preview (defaults to port 3000; override with: npm run preview -- --port 3001)
